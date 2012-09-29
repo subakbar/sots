@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="10dp">
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginRight="15dp"
+		android:orientation="vertical">
+
+		<TextView android:id="@+id/word_item_subject"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:textSize="16sp"
+			android:text="복음의 능력" />
+
+		<TextView android:id="@+id/word_item_paragraph"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="right"
+			android:textSize="12sp"
+			android:text="누가복음 4장 18,19절" />
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="> " />
+
+</LinearLayout>

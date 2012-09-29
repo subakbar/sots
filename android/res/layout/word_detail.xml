@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/merge_actionbar" />	
+	
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:padding="15dp">
+
+			<!-- <TextView android:id="@+id/word_detail_subject"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginBottom="10dp"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:text="Word.subject" /> -->
+			
+			<TextView android:id="@+id/word_detail_note"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:textSize="16sp"
+				android:lineSpacingExtra="2sp"
+				android:text="Word.note" />
+	
+			<TextView android:id="@+id/word_detail_paragraph"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Word.paragraph"
+				android:layout_gravity="right" />
+			
+			<CheckBox android:id="@+id/word_detail_memorized_ctrl"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="30dp"
+				android:text=" 암송했음" />
+			
+		</LinearLayout>
+	
+	</ScrollView>
+	
+</LinearLayout>
