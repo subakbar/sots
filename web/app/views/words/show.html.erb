@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @word.subject %>
+</p>
+
+<p>
+  <b>Paragraph:</b>
+  <%= @word.paragraph %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @word.note %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%= @word.tag %>
+</p>
+
+<p>
+  <b>Prefix:</b>
+  <%= @word.prefix %>
+</p>
+
+<p>
+  <b>Memorized:</b>
+  <%= @word.memorized %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @word.priority %>
+</p>
+
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

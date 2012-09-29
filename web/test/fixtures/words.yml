@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject: MyString
+  paragraph: MyString
+  note: MyText
+  tag: MyString
+  prefix: MyString
+  memorized: 1
+  priority: 1
+
+two:
+  subject: MyString
+  paragraph: MyString
+  note: MyText
+  tag: MyString
+  prefix: MyString
+  memorized: 1
+  priority: 1
