@@ -3,6 +3,7 @@ package com.foobargem.android.app.sots.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
@@ -55,4 +56,18 @@ public class WordDetailActivity extends BaseActivity {
 		}		
 	}
 	
+	// '암송하기'버튼을 선택시 WordMemoryActivity로 이동한다.
+	public void memoryButton(View view) {
+		Intent intent = new Intent(getApplicationContext(), WordMemoryActivity.class);
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		intent.putExtra("word", word);
+		startActivityForResult(intent, 0);
+	}
+	
+	// WordMemoryActivity에서 10단계를 모두암송시 '암송했음'이 체크된다.
+	@Override
+	protected void onActivityResult (int requestCode, int resultCode, Intent data) {
+		if (resultCode == Activity.RESULT_OK)
+			memorizedCtrl.setChecked(true);
+	}
 }

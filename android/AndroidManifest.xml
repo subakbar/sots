@@ -13,6 +13,7 @@
         <activity android:name=".ui.TagsListActivity" android:label="@string/app_name"></activity>
 		<activity android:name=".ui.WordsListActivity"></activity>
         <activity android:name=".ui.WordDetailActivity"></activity>
+        <activity android:name=".ui.WordMemoryActivity"></activity>
     </application>
 
 </manifest>
