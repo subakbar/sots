@@ -32,26 +32,41 @@
 				android:textSize="16sp"
 				android:lineSpacingExtra="2sp"
 				android:text="Word.note" />
-	
-			<TextView android:id="@+id/word_detail_paragraph"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Word.paragraph"
-				android:layout_gravity="right" />
-			    
-		    <CheckBox android:id="@+id/word_detail_memorized_ctrl"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="right"
-				android:text=" 암송했음" />
+
 			
-		    <Button 
-			        android:layout_width="fill_parent"
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <Button 
+		            android:id="@+id/word_memory_pre_button"
+		            android:layout_weight="1"
+			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:layout_marginTop="20sp"
 			        android:textSize="16sp"
-			        android:text="암  송  하  기"
-			        android:onClick="memoryButton"/>
+			        android:text="←"
+			        android:onClick="preButton"/>
+		        
+		        <Button 
+		            android:id="@+id/word_memory_reset_button"
+		            android:layout_weight="3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="16sp"
+			        android:text="1단계 다시하기"
+			        android:onClick="resetButton"/>
+		        
+		        <Button 
+		            android:id="@+id/word_memory_next_button"
+		            android:layout_weight="1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="16sp"
+			        android:text="→"
+			        android:onClick="nextButton"/>
+		        
+		    </LinearLayout>
 		    
 		</LinearLayout>
 	
