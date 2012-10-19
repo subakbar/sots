@@ -46,7 +46,12 @@ public class WordMemoryActivity extends BaseActivity {
 				break;
 			}
 			else {
-				divideWord.add(noteViewString.substring(0, index));
+				// 콤마를 제거한다.
+				if (noteViewString.substring(index-1, index).equals(","))
+					divideWord.add(noteViewString.substring(0, index-1));
+				else
+					divideWord.add(noteViewString.substring(0, index));
+				
 				noteViewString = noteViewString.substring(index+1);
 			}
 		}
@@ -134,7 +139,7 @@ public class WordMemoryActivity extends BaseActivity {
 			for (i=0; i < WordSize; i++) {
 				noteViewString += "   ";
 				for (j = 0; j < divideWord.get(i).length(); j++)
-					noteViewString += " · ";
+					noteViewString += " - ";
 			}
 		}
 		
