@@ -14,6 +14,9 @@
 		<activity android:name=".ui.WordsListActivity"></activity>
         <activity android:name=".ui.WordDetailActivity"></activity>
         <activity android:name=".ui.WordMemoryActivity"></activity>
+        <activity android:name=".ui.WordInputMemoryActivity"></activity>
     </application>
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>

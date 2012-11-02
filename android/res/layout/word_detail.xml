@@ -50,8 +50,16 @@
 			        android:layout_height="wrap_content"
 			        android:layout_marginTop="20sp"
 			        android:textSize="16sp"
-			        android:text="암  송  하  기"
+			        android:text="구두로 암송하기 (10단계)"
 			        android:onClick="memoryButton"/>
+		    
+		    <Button 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5sp"
+			        android:textSize="16sp"
+			        android:text="타자로 암송하기 (5단계)"
+			        android:onClick="inputMemoryButton"/>
 		    
 		</LinearLayout>
 	

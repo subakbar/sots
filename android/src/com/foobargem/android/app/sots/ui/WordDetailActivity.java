@@ -56,9 +56,17 @@ public class WordDetailActivity extends BaseActivity {
 		}		
 	}
 	
-	// '암송하기'버튼을 선택시 WordMemoryActivity로 이동한다.
+	// '구두로 암송하기'버튼을 선택시 WordMemoryActivity로 이동한다.
 	public void memoryButton(View view) {
 		Intent intent = new Intent(getApplicationContext(), WordMemoryActivity.class);
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		intent.putExtra("word", word);
+		startActivityForResult(intent, 0);
+	}
+	
+	// '타자로 암송하기'버튼을 선택시 WordInputMemoryActivity로 이동한다.
+	public void inputMemoryButton(View view) {
+		Intent intent = new Intent(getApplicationContext(), WordInputMemoryActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		intent.putExtra("word", word);
 		startActivityForResult(intent, 0);
